@@ -1,9 +1,7 @@
 from DateiEinlesen import Labyrinth, LabListeZeilen, LabWall, LabHeight, LabLength
 LabNormal = []
-StartKordX = 0
-StartKordY = 0
-ZielKordX = 0
-ZielKordY = 0
+StartKord = []
+ZielKord = []
 ZahlKord = []
 i = 0
 while i < LabHeight:
@@ -26,8 +24,10 @@ while i < LabHeight:
 
         elif LabListeZeilen[i][j] == "S":
             LabZeichen.append(["SX",1,0])
+            StartKord =[i,j]
         elif LabListeZeilen[i][j] == "Z":
             LabZeichen.append(["ZX",0,0])
+            ZielKord = [i,j]
         j = j + 1
     LabNormal.append(LabZeichen)
     i = i + 1
@@ -35,6 +35,9 @@ while i < LabHeight:
 
 print(LabListeZeilen)
 print(LabNormal)
-print(ZahlKord)
+print()
+print("StartKordinaten bei:" ,StartKord)
+print("ZielKordinaten bei:" ,ZielKord)
+print("Zahl Kordinaten bei ",ZahlKord)
 
 print(LabNormal[LabHeight-1][LabLength-1][0])
