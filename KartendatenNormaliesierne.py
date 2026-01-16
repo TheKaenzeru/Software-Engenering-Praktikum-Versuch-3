@@ -14,14 +14,14 @@ while i < LabHeight:
         if LabListeZeilen[i][j] == "W" and LabWall == "W":
             LabZeichen.append(["WX",0,0])
         elif LabListeZeilen[i][j] == "X":
-            LabZeichen.append(["WX", 0, 0])
+            LabZeichen.append(["WX",0,0])
 
         elif LabListeZeilen[i][j] == "W" and LabWall == "X":
             LabZeichen.append(["GX",0,0])
         elif LabListeZeilen[i][j] == ".":
             LabZeichen.append(["GX",0,0])
         elif LabListeZeilen[i][j].isdigit():
-            LabZeichen.append(["GX", 0, 1])
+            LabZeichen.append(["GX",0,LabListeZeilen[i][j]])
             ZahlKord.append([LabListeZeilen[i][j],i,j])
 
         elif LabListeZeilen[i][j] == "S":
@@ -35,4 +35,6 @@ while i < LabHeight:
 
 print(LabListeZeilen)
 print(LabNormal)
+print(ZahlKord)
+
 print(LabNormal[LabHeight-1][LabLength-1][0])

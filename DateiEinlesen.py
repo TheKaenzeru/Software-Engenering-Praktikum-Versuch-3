@@ -1,6 +1,6 @@
 import math
 import json
-with open("Labyrinth-3.txt", "r") as Labyrinth:
+with open("Labyrinth-1.txt", "r") as Labyrinth:
     LabHeight = 0
     LabLength = len(Labyrinth.readline()) - 1
     LabWall = ""
