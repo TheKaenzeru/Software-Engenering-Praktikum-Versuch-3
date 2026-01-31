@@ -1,0 +1,7 @@
+Wand = WX
+Gang = GX
+Besuchter Gang = BGX
+Avatar = AX
+Start = SX
+Ziel = ZX
+Zahl = XX
