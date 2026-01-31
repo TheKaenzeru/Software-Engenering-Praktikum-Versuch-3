@@ -36,15 +36,15 @@ def normalisiere_karten_daten(LabListeZeilen, LabWall, LabHeight, LabLength):
 
 
 
-#if __name__ == "__main__":  # fürs debugging der einzelden unterprogramme
+if __name__ == "__main__":  # fürs debugging der einzelden unterprogramme
     from DateiEinlesen import datei_auswahl, datei_einlesen
     LabDatei = datei_auswahl()
     LabListeZeilen, LabHeight, LabLength, LabWall = datei_einlesen(LabDatei)
     LabNormal, StartKord, ZielKord, ZahlKord = normalisiere_karten_daten(LabListeZeilen, LabWall, LabHeight, LabLength)
 
-    #print(LabListeZeilen)
-    #print(LabNormal)
-    #print()
-    #print("StartKordinaten bei:" ,StartKord)
-    #print("ZielKordinaten bei:" ,ZielKord)
-    #print("Zahl Kordinaten bei ",ZahlKord)
+    print(LabListeZeilen)
+    print(LabNormal)
+    print()
+    print("StartKordinaten bei:" ,StartKord)
+    print("ZielKordinaten bei:" ,ZielKord)
+    print("Zahl Kordinaten bei ",ZahlKord)
